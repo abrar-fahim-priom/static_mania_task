@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-poppins relative w-full h-full bg-[#101010] rounded-[30px]">
+    <div class="container  mx-auto p-4">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-3 mt-3 flex flex-col justify-between h-[650px]  text-white pt-9 rounded-lg">
+                <div class="mb-4 relative">
+                    <div class="w-16 h-16 bg-gray-400 rounded-lg mb-4 relative">
+                        <img src="./Assets/profile.png" alt="Profile Image"
+                            class="rounded-lg w-full h-full object-cover">
+                        <div
+                            class="w-7 h-7 rounded-full bg-red-600 absolute -top-2 -right-2 flex items-center justify-center text-white text-xs font-semibold">
+                            4</div>
+                    </div>
+                    <p class="font-semibold mt-1 text-2xl">Samantha</p>
+                    <p class="text-normal text-gray-400 text-sm">samantha@email.com</p>
+                </div>
+
+
+                <nav class="mb-24">
+                    <ul class="font-semibold flex flex-col gap-4  text-xl">
+                        <li class="mb-2 opacity-50">Dashboard</li>
+                        <li class="mb-2 font-bold">Expenses</li>
+                        <li class="mb-2 opacity-50">Wallets</li>
+                        <li class="mb-2 opacity-50">Summary</li>
+                        <li class="mb-2 opacity-50">Accounts</li>
+                        <li class="mb-2 opacity-50">Settings</li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- right two -->
+            <!-- Main content -->
+            <div class="col-span-9 bg-white  rounded-lg">
+                <div class="grid  grid-cols-12">
+                    <div class="col-span-8  px-16 py-10 bg-white rounded-lg">
+
+                        <div class="flex mb-2 items-center justify-between">
+                            <h1 class="text-3xl font-bold ">Expenses</h1>
+                            <div class="flex items-center">
+                                <div class="flex items-center  -space-x-1">
+                                    <div class="w-7 h-7 z-30 rounded-full bg-indigo-600 border-2  border-white">
+                                        <img class="rounded-full" src="./Assets/user (2).png" alt="">
+                                    </div>
+                                    <div class="w-7 h-7 z-20 rounded-full bg-red-600 border-2 border-white">
+                                        <img class="rounded-full" src="./Assets/user (3).png" alt="">
+                                    </div>
+                                    <div class="w-7 h-7 z-10 rounded-full bg-blue-600 border-2  border-white">
+                                        <img class="rounded-full" src="./Assets/user (4).png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="ml-1">
+                                    <img src="./Assets/plus.svg" class="w-6" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-sm text-gray-500 mb-4">01 - 25 March, 2020</p>
+
+                        <div class="mb-10">
+                            <img src="./Assets/Stats.svg" alt="">
+                        </div>
+
+                        <div class="days mb-10">
+
+                            <div class="flex items-center mb-2 justify-between">
+                                <h2 class="font-bold font-avenir text-base text-[#262A41] ">Today</h2>
+
+                                <div class="flex gap-1">
+                                    <div class="bg-slate-300 w-1 h-1 rounded-full"></div>
+                                    <div class="bg-slate-300 w-1 h-1 rounded-full"></div>
+                                    <div class="bg-slate-300 w-1 h-1 rounded-full"></div>
+                                </div>
+                            </div>
+
+                            <hr class="mb-6">
+
+                            <div class="cicle-set mb-6 flex justify-between">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 flex items-center justify-center rounded-full round bg-[#32A7E2]">
+                                        <img src="./Assets/Shape.svg" alt="">
+                                    </div>
+                                    <div class="flex flex-col mx-3">
+                                        <p class="text-base font-medium"> Grocery </p>
+                                        <p class="font-poppins font-normal opacity-50 text-[#404852] text-sm">
+                                            5:12 pm • Belanja di pasar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="font-poppins font-semibold text-base text-[#273240]">
+                                    -326.800
+                                </div>
+                            </div>
+
+                            <div class="cicle-set flex mb-6 justify-between">
+                                <div class="flex  items-center">
+                                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#B548C6]">
+                                        <img src="./Assets/Shape (1).svg" alt="">
+                                    </div>
+                                    <div class="flex flex-col mx-3">
+                                        <p class="text-base font-medium"> Transportation </p>
+                                        <p class="font-poppins font-normal opacity-50 text-[#404852] text-sm">
+                                            5:12 pm • Naik bus umum
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="font-poppins font-semibold text-base text-[#273240]">
+                                    -15.000
+                                </div>
+                            </div>
+
+
+                            <div class="cicle-set flex mb-6 justify-between">
+                                <div class="flex  items-center">
+
+                                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#FF8700]">
+                                        <img src="./Assets/Shape (2).svg" alt="">
+                                    </div>
+                                    <div class="flex flex-col mx-3">
+                                        <p class="text-base font-medium"> Housing </p>
+                                        <p class="font-poppins font-normal opacity-50 text-[#404852] text-sm">
+                                            5:12 pm • Bayar Listrik
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="font-poppins font-semibold text-base text-[#273240]">
+                                    -185.750
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="days">
+                            <div class="flex items-center mb-2 justify-between">
+                                <h2 class="font-bold font-avenir text-base text-[#262A41] ">Monday, 23 March 2020</h2>
+
+                                <div class="flex gap-1">
+                                    <div class="bg-slate-300 w-1 h-1 rounded-full"></div>
+                                    <div class="bg-slate-300 w-1 h-1 rounded-full"></div>
+                                    <div class="bg-slate-300 w-1 h-1 rounded-full"></div>
+                                </div>
+                            </div>
+
+                            <hr class="mb-6">
+
+                            <div class="cicle-set flex mb-6 justify-between">
+                                <div class="flex  items-center">
+                                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#DC3434]">
+                                        <img src="./Assets/Shape (3).svg" alt="">
+                                    </div>
+                                    <div class="flex flex-col mx-3">
+                                        <p class="text-base font-medium"> Food and Drink </p>
+                                        <p class="font-poppins font-normal opacity-50 text-[#404852] text-sm">
+                                            5:12 pm • Makan Steak
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="font-poppins font-semibold text-base text-[#273240]">
+                                    -185.750
+                                </div>
+                            </div>
+
+                            <div class="cicle-set flex mb-6 justify-between">
+                                <div class="flex  items-center">
+
+                                    <div class="w-12 h-12 flex items-center justify-center  rounded-full bg-[#4BA83D]">
+                                        <img src="./Assets/Shape (4).svg" alt="">
+                                    </div>
+                                    <div class="flex flex-col mx-3">
+                                        <p class="text-base font-medium"> Entertainment </p>
+
+                                        <p class="font-poppins font-normal opacity-50 text-[#404852] text-sm">
+                                            5:12 pm • Nonton Bioskop
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="font-poppins font-semibold text-base text-[#273240]">
+                                    -185.750
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Right sidebar -->
+                    <div
+                        class="col-span-4 py-9 justify-between flex flex-col items-center bg-[#F9FAFC] rounded-lg px-9">
+                        <div class="rounded-lg w-[240px]">
+                            <h2 class="font-bold font-avenir text-lg mb-6">Where your money go?</h2>
+
+                            <div class="space-y-1 mb-10">
+                                <div class="flex justify-between">
+                                    <span class="font-poppins tracking-wide font-medium text-sm">Food and Drinks</span>
+                                    <span class="font-poppins font-normal text-sm">872.400</span>
+                                </div>
+
+                                <div class="relative">
+                                    <img src="./Assets/white-rect.svg" class="absolute" alt="">
+                                    <img src="./Assets/green-rect.svg" class="absolute" alt="">
+                                </div>
+                            </div>
+
+                            <div class="space-y-1 mb-10">
+                                <div class="flex justify-between">
+                                    <span class="font-poppins tracking-wide font-medium text-sm">Shopping</span>
+                                    <span class="font-poppins font-normal text-sm">1378.200</span>
+                                </div>
+
+                                <div class="relative">
+                                    <img src="./Assets/white-rect.svg" class="absolute" alt="">
+                                    <img src="./Assets/green-rect.svg" class="absolute" alt="">
+                                </div>
+                            </div>
+                            <div class="space-y-1 mb-10">
+                                <div class="flex justify-between">
+                                    <span class="font-poppins tracking-wide font-medium text-sm">Housing</span>
+                                    <span class="font-poppins font-normal text-sm">928.5 00</span>
+                                </div>
+
+                                <div class="relative">
+                                    <img src="./Assets/white-rect.svg" class="absolute" alt="">
+                                    <img src="./Assets/green-rect.svg" class="absolute" alt="">
+                                </div>
+                            </div>
+                            <div class="space-y-1 mb-10">
+                                <div class="flex justify-between">
+                                    <span class="font-poppins tracking-wide font-medium text-sm">Transportation</span>
+                                    <span class="font-poppins font-normal text-sm">420.700</span>
+                                </div>
+
+                                <div class="relative">
+                                    <img src="./Assets/white-rect.svg" class="absolute" alt="">
+                                    <img src="./Assets/green-rect.svg" class="absolute" alt="">
+                                </div>
+                            </div>
+                            <div class="space-y-1 mb-10">
+                                <div class="flex justify-between">
+                                    <span class="font-poppins tracking-wide font-medium text-sm">Vehicle</span>
+                                    <span class="font-poppins font-normal text-sm">520.000</span>
+                                </div>
+
+                                <div class="relative">
+                                    <img src="./Assets/white-rect.svg" class="absolute" alt="">
+                                    <svg width="70" height="5" class="absolute" viewBox="0 0 70 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="70" height="5" rx="2.5" fill="#31BA96" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="h-[258px] flex flex-col gap-3 w-[240px] bg-[#EDF0F6] px-4 pb-5 rounded-lg">
+
+                            <div class="flex justify-between">
+
+                                <img src="./Assets/box.png" class="relative h-20 w-20 -mt-8" alt="">
+                                <img src="./Assets/flower.png" class="relative h-20 w-14 -mt-8" alt="">
+                            </div>
+
+                            <div>
+                                <h2 class="font-semibold text-base text-left font-poppins mb-1">Save more money</h2>
+                                <p class="opacity-70 tracking-wide font-poppins text-xs text-gray-500 leading-5 mb-4">
+                                    eiusmod tempor
+                                    incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim.</p>
+                            </div>
+
+
+                            <button
+                                class="bg-black w-full py-2 text-white font-poppins text-sm tracking-widest  rounded-md">VIEW
+                                TIPS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
